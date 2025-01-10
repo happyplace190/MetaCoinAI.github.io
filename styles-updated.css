@@ -11,6 +11,7 @@ body {
     background-color: #F0F8FF; /* Light sky blue background */
     color: #333333;
     line-height: 1.6;
+    background-image: linear-gradient(to right, #E6E6FA, #F0F8FF); /* Subtle gradient for body */
 }
 
 /* Container */
@@ -27,18 +28,21 @@ header {
     padding: 20px 0;
     color: #ffffff;
     border-bottom: 5px solid #9932CC; /* Stylish purple border */
+    box-shadow: 0px 4px 8px rgba(153, 50, 204, 0.6); /* Violet shadow */
 }
 
 header h1 {
     font-size: 3em;
     font-weight: bold;
-    text-shadow: 2px 2px #8A2BE2; /* Violet glow effect */
+    text-shadow: 3px 3px #8A2BE2; /* Enhanced violet glow effect */
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.3em;
     margin-bottom: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px #9932CC; /* Subtle purple glow */
 }
 
 header nav a {
@@ -47,26 +51,30 @@ header nav a {
     margin: 0 10px;
     font-weight: bold;
     font-size: 1.1em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: rgba(138, 43, 226, 0.2); /* Semi-transparent violet */
 }
 
 header nav a:hover {
     background: #8A2BE2; /* Violet hover effect */
     color: #ffffff;
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Section */
 .section {
     padding: 40px 0;
     background-color: #E6E6FA; /* Light lavender for contrast */
-    border-bottom: 1px solid #9932CC; /* Dark purple border */
+    border-bottom: 2px solid #9932CC; /* Dark purple border */
+    border-radius: 10px;
     text-align: left;
+    box-shadow: 0px 6px 12px rgba(153, 50, 204, 0.3); /* Section shadow */
 }
 
 .section:nth-child(even) {
-    background-color: #87CEEB; /* Sky blue for alternate sections */
+    background-color: #D8BFD8; /* Thistle for alternate sections */
 }
 
 .section h2 {
@@ -77,6 +85,8 @@ header nav a:hover {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(138, 43, 226, 0.5); /* Violet shadow */
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .section ul, .section p {
@@ -86,36 +96,41 @@ header nav a:hover {
 }
 
 .section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    list-style: square inside;
+    color: #4B0082; /* Dark purple bullet points */
 }
 
 /* Links */
 a {
     color: #8A2BE2; /* Violet links */
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     color: #9932CC; /* Bright purple hover */
     text-decoration: underline;
+    font-size: 1.05em; /* Slight increase in size on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     background: linear-gradient(90deg, #4B0082, #8A2BE2); /* Dark purple to violet */
-    padding: 15px 0;
+    padding: 20px 0;
     color: #ffffff;
     font-size: 1em;
+    box-shadow: 0px -4px 8px rgba(138, 43, 226, 0.5); /* Violet shadow */
 }
 
 /* Button Styling for Links */
 .section ul li a {
     display: inline-block;
     padding: 10px 15px;
-    background: #87CEFA;
+    background: linear-gradient(90deg, #87CEEB, #8A2BE2); /* Sky blue to violet gradient */
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: bold;
@@ -124,7 +139,8 @@ footer {
 }
 
 .section ul li a:hover {
-    background: #8A2BE2; /* Violet hover effect */
+    background: linear-gradient(90deg, #8A2BE2, #4B0082); /* Reverse violet gradient */
     color: #ffffff;
-    box-shadow: 0px 6px 8px rgba(138, 43, 226, 0.7); /* Violet glow on hover */
+    box-shadow: 0px 6px 12px rgba(138, 43, 226, 0.7); /* Stronger glow on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
 }
