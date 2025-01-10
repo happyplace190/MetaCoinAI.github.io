@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #87CEFA, #D8BFD8); /* Sky blue to light purple gradient */
+    background: linear-gradient(90deg, #87CEFA, #4B0082); /* Sky blue to dark purple gradient */
     padding: 20px 0;
     color: #ffffff;
 }
@@ -47,14 +47,14 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #F0E68C; /* Golden hover effect */
+    color: #DDA0DD; /* Soft lavender hover effect */
 }
 
 /* Section */
 .section {
     padding: 40px 0;
-    background-color: #E6E6FA; /* Lavender background for contrast */
-    border-bottom: 1px solid #D8BFD8; /* Light purple border */
+    background-color: #E6E6FA; /* Light lavender for soft contrast */
+    border-bottom: 1px solid #4B0082; /* Dark purple border */
 }
 
 .section:nth-child(even) {
@@ -64,7 +64,7 @@ header nav a:hover {
 .section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #4B0082; /* Indigo for headings */
+    color: #4B0082; /* Dark purple for headings */
 }
 
 .section ul, .section p {
@@ -75,19 +75,19 @@ header nav a:hover {
 
 /* Links */
 a {
-    color: #4B0082;
+    color: #4B0082; /* Dark purple links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #8A2BE2; /* Bright purple hover */
+    color: #9932CC; /* Bright dark purple hover */
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #D8BFD8;
+    background-color: #4B0082;
     padding: 10px 0;
     color: #ffffff;
     font-size: 0.9em;
@@ -107,6 +107,6 @@ footer {
 }
 
 .section ul li a:hover {
-    background: #8A2BE2; /* Bright purple hover */
+    background: #9932CC; /* Bright dark purple hover */
     color: #ffffff;
 }
