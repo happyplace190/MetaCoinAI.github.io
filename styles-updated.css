@@ -1,82 +1,110 @@
-
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light grey background for contrast */
-    color: #333; /* Dark grey text for readability */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
 }
 
-header {
-    background: #0064e0; /* Science Blue */
-    color: #fff;
-    padding: 1rem 0;
+/* Body Styling */
+body {
+    background-color: #18191A; /* Dark background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
     text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1877F2, #3A3B3C); /* Meta AI-inspired gradient */
+    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin: 0.5rem 0;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-nav a {
-    color: #fff;
+header nav a {
     text-decoration: none;
-    margin: 0 1rem;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1em;
 }
 
-nav a:hover {
-    text-decoration: underline;
+header nav a:hover {
+    color: #E4E6EB; /* Slight hover effect */
 }
 
+/* Section */
 .section {
-    padding: 2rem;
-    background: #fff; /* White background for sections */
-    margin: 1rem 0;
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px 0;
+    background-color: #242526; /* Slightly lighter dark section background */
+    border-bottom: 1px solid #3A3B3C;
+}
+
+.section:nth-child(even) {
+    background-color: #18191A;
 }
 
 .section h2 {
-    margin-top: 0;
-    color: #0064e0; /* Science Blue for headings */
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1877F2; /* Accent color for headings */
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.section ul, .section p {
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
-ul li {
-    margin: 0.5rem 0;
+/* Links */
+a {
+    color: #1877F2;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #E4E6EB;
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    background-color: #3A3B3C;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 0.9em;
 }
 
-button, .cta {
-    background-color: #0082fb; /* Azure Radiance for call-to-action buttons */
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
+/* Button Styling for Links */
+.section ul li a {
     display: inline-block;
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    cursor: pointer;
-    border-radius: 4px;
+    padding: 10px 15px;
+    background: #1877F2;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-button:hover, .cta:hover {
-    background-color: #0064e0; /* Darken on hover */
+.section ul li a:hover {
+    background: #3A3B3C;
+    color: #E4E6EB;
 }
