@@ -26,7 +26,7 @@ body {
 /* Header */
 header {
     background: linear-gradient(90deg, #4B0082, #8A2BE2, #00FFFF); /* Brand gradient */
-    padding: 20px 0;
+    padding: 15px 0;
     color: #ffffff;
     border-bottom: 5px solid #9932CC;
     position: sticky;
@@ -36,7 +36,7 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Reduced font size */
     font-weight: bold;
     text-shadow: 3px 3px 10px #00FFFF; /* Neon glow effect */
     margin-bottom: 10px;
@@ -57,7 +57,7 @@ header nav a {
     color: #ffffff;
     margin: 0 10px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 8px 15px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.1);
@@ -72,7 +72,7 @@ header nav a:hover {
 
 /* Section */
 .section {
-    padding: 40px 0;
+    padding: 30px 0;
     background: linear-gradient(120deg, #001A33, #4B0082); /* Dark gradient */
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -95,7 +95,7 @@ header nav a:hover {
 }
 
 .section h2 {
-    font-size: 2.2em;
+    font-size: 1.8em; /* Reduced font size */
     color: #00FFFF;
     background: linear-gradient(90deg, #4B0082, #8A2BE2);
     padding: 10px;
@@ -138,4 +138,23 @@ footer {
     color: #ffffff;
     font-size: 1em;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #8A2BE2, #00FFFF);
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(138, 43, 226, 0.5);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 255, 255, 0.7);
 }
