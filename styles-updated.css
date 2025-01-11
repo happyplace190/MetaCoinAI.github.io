@@ -1,90 +1,160 @@
-/* Updated Body Styling */
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+    color: #ffffff;
+}
+
+/* Body Styling */
 body {
-    background: linear-gradient(120deg, #001A33, #4B0082, #FF69B4); /* Added pink tone */
+    background: linear-gradient(120deg, #E0F7FF, #87CEEB); /* Light blue gradient */
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     min-height: 100vh;
 }
 
-/* Section Styling with Pink Blending */
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #87CEFA, #ADD8E6, #00BFFF); /* Light blue gradient */
+    padding: 15px 0;
+    color: #ffffff;
+    border-bottom: 5px solid #4682B4; /* Blue border */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 10px rgba(135, 206, 250, 0.5); /* Light blue shadow */
+}
+
+header h1 {
+    font-size: 2.5em; /* Reduced font size */
+    font-weight: bold;
+    text-shadow: 3px 3px 10px #00BFFF; /* Neon blue glow */
+    margin-bottom: 10px;
+    animation: text-glow-blue 2s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow-blue {
+    from {
+        text-shadow: 0px 0px 10px #87CEFA, 0px 0px 20px #00BFFF;
+    }
+    to {
+        text-shadow: 0px 0px 20px #87CEFA, 0px 0px 40px #00BFFF;
+    }
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background: #00BFFF;
+    box-shadow: 0px 4px 8px rgba(0, 191, 255, 0.5);
+    transform: scale(1.1);
+}
+
+/* Section Styling */
 .section {
     padding: 30px 0;
-    background: linear-gradient(120deg, #4B0082, #FF69B4); /* Blended gradient with pink */
+    background: linear-gradient(120deg, #E0F7FF, #87CEFA); /* Light blue gradient */
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     animation: fade-in 1s ease-in;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .section:nth-child(even) {
-    background: linear-gradient(120deg, #FF69B4, #4B0082); /* Alternate gradient with pink */
+    background: linear-gradient(120deg, #87CEFA, #E0F7FF); /* Alternate gradient */
 }
 
-/* Header Background Update */
-header {
-    background: linear-gradient(90deg, #FF69B4, #8A2BE2, #00FFFF); /* Pinkish gradient added */
-    padding: 15px 0;
-    color: #ffffff;
-    border-bottom: 5px solid #FF1493; /* Pink border */
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0px 4px 10px rgba(255, 20, 147, 0.5); /* Pink drop shadow */
-}
-
-/* Section Headers with Pink Accents */
 .section h2 {
     font-size: 1.8em;
-    color: #FF69B4; /* Pink header text */
-    background: linear-gradient(90deg, #FF69B4, #8A2BE2);
+    color: #00BFFF; /* Light blue header text */
+    background: linear-gradient(90deg, #87CEFA, #ADD8E6);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.5); /* Pink glow effect */
+    box-shadow: 0px 4px 8px rgba(135, 206, 250, 0.5);
     animation: zoom-in 1s ease;
 }
 
-/* Button Styling with Pink */
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Links in Sections */
+.section ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #87CEFA, #00BFFF);
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(135, 206, 250, 0.5);
+}
+
+.section ul li a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(135, 206, 250, 0.7);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #87CEEB, #00BFFF);
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 1em;
+    box-shadow: 0px -4px 6px rgba(135, 206, 250, 0.5); /* Light blue shadow */
+}
+
+/* Buttons */
 button {
     padding: 12px 25px;
     font-size: 1em;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(90deg, #FF69B4, #00FFFF); /* Pink and cyan gradient */
+    background: linear-gradient(90deg, #87CEFA, #00BFFF); /* Light blue gradient */
     color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.5);
+    box-shadow: 0px 4px 8px rgba(135, 206, 250, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 button:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 6px 12px rgba(255, 182, 193, 0.7); /* Softer pink hover effect */
-}
-
-/* Footer Updates */
-footer {
-    background: linear-gradient(90deg, #FF69B4, #4B0082);
-    padding: 15px 0;
-    color: #ffffff;
-    font-size: 1em;
-    box-shadow: 0px -4px 6px rgba(255, 20, 147, 0.5); /* Pink shadow for footer */
-}
-
-/* Links with Pink Hover */
-header nav a:hover {
-    background: #FF69B4;
-    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.5);
-    transform: scale(1.1);
-}
-
-/* Links in Section with Pink */
-.section ul li a {
-    background: linear-gradient(90deg, #FF69B4, #00FFFF); /* Pinkish gradient for links */
-    box-shadow: 0px 4px 6px rgba(255, 105, 180, 0.5);
-}
-
-.section ul li a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(255, 182, 193, 0.7); /* Softer pink glow */
+    box-shadow: 0px 6px 12px rgba(135, 206, 250, 0.7);
 }
