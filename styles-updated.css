@@ -8,10 +8,10 @@ body, h1, h2, p, ul, li, a {
 
 /* Body Styling */
 body {
-    background: linear-gradient(135deg, #00BFFF, #8B008B); /* Matching the gradient colors */
-    color: #ffffff;
+    background: linear-gradient(135deg, #1E1E30, #3B0D61); /* A uniform deep gradient for body background */
+    color: #EDEDED; /* Light gray for readability */
     line-height: 1.6;
-    background-attachment: fixed; /* Fixed background for stylish scrolling */
+    background-attachment: fixed; /* Keeps the background stylish when scrolling */
 }
 
 /* Container */
@@ -24,18 +24,20 @@ body {
 
 /* Header */
 header {
-    background: url('/mnt/data/metacoin_070817.jpg') no-repeat center center/cover; /* Adding the image */
-    padding: 40px 0;
-    color: #00FFFF; /* Cyan text color from the image */
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Slight shadow for text clarity */
-    border-bottom: 5px solid #8B008B; /* Deep magenta border */
+    background: linear-gradient(90deg, #3B0D61, #4F0C77, #8B008B); /* Uniform gradient with the image's colors */
+    padding: 50px 0;
+    text-align: center;
+    color: #00FFFF; /* Vibrant cyan text */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+    border-bottom: 3px solid #8B008B; /* Deep magenta */
 }
 
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Glow effect */
 }
 
 header p {
@@ -47,89 +49,113 @@ header p {
 header nav a {
     text-decoration: none;
     color: #00FFFF;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 8px 15px;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     background: rgba(0, 255, 255, 0.2); /* Semi-transparent cyan */
 }
 
 header nav a:hover {
-    background: #00BFFF; /* Vibrant blue hover effect */
+    background: #4F0C77; /* Rich violet hover */
     transform: scale(1.1);
 }
 
 /* Section */
 .section {
-    padding: 40px 0;
-    background: linear-gradient(135deg, #8B008B, #00BFFF); /* Alternating gradient colors */
+    padding: 50px 0;
+    background: linear-gradient(135deg, #3B0D61, #4F0C77); /* Matching the color palette */
+    color: #EDEDED;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     text-align: left;
-    box-shadow: 0px 6px 12px rgba(139, 0, 139, 0.3); /* Stylish magenta shadow */
-    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .section h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #00FFFF; /* Cyan title */
+    color: #00FFFF; /* Cyan for uniformity */
     text-transform: uppercase;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-bottom: 3px solid #8B008B;
+    text-shadow: 0px 4px 6px rgba(0, 255, 255, 0.3); /* Glow effect */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2); /* Slight transparency */
+    border-left: 5px solid #8B008B; /* Highlight with magenta */
 }
 
 .section ul, .section p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #EDEDED;
 }
 
 .section ul li {
     margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
     color: #ffffff;
+}
+
+.section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #8B008B; /* Magenta bullet point */
 }
 
 /* Links */
 a {
-    color: #00FFFF; /* Cyan links */
+    color: #00FFFF; /* Uniform cyan links */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #8B008B; /* Deep magenta hover */
+    color: #8B008B; /* Uniform magenta hover */
     text-decoration: underline;
-    font-size: 1.05em;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background: linear-gradient(135deg, #8B008B, #00BFFF); /* Gradient footer */
+    background: linear-gradient(90deg, #3B0D61, #4F0C77); /* Uniform gradient */
     padding: 20px 0;
-    color: #00FFFF;
-    box-shadow: 0px -4px 8px rgba(0, 191, 255, 0.5);
+    color: #EDEDED;
+    border-top: 3px solid #8B008B;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #00FFFF; /* Cyan for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #8B008B;
+    text-decoration: underline;
 }
 
 /* Button Styling for Links */
 .section ul li a {
     display: inline-block;
     padding: 10px 15px;
-    background: #8B008B; /* Deep magenta background */
+    background: #3B0D61; /* Darker background for contrast */
     color: #00FFFF;
     border-radius: 10px;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(139, 0, 139, 0.5);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 .section ul li a:hover {
-    background: #00BFFF; /* Vibrant blue hover effect */
+    background: #8B008B; /* Vibrant magenta hover */
     color: #ffffff;
-    box-shadow: 0px 6px 12px rgba(0, 191, 255, 0.7);
+    box-shadow: 0px 6px 12px rgba(139, 0, 139, 0.7); /* Glow on hover */
     transform: translateY(-2px);
 }
